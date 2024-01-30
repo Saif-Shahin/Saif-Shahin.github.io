@@ -14,7 +14,7 @@ function App() {
   ];
      */
 
-  const [showNotableWorks, setShowNotableWorks] = useState(false);
+  //const [showNotableWorks, setShowNotableWorks] = useState(false);
   const [showFullStackProjects, setShowFullStackProjects] = useState(false);
   const [showMachineLearning, setShowMachineLearning] = useState(false);
   const [showSignalsNetworks, setShowSignalsNetworks] = useState(false);
@@ -43,7 +43,7 @@ const machineLearning = [
   "I have research experience in RL, Domain Adaptation, and NLP.",
   {
     text: "I developed an end-to-end pipeline for automated chess piece position annotation using domain adaptation techniques.",
-    paperLink: "https://saif-shahin.github.io/public/RecogniChess.pdf",
+    paperLink: "https://saif-shahin.github.io/RecogniChess.pdf",
     githubLink: "https://github.com/WassimJabz/RecogniChess/tree/main"
   }
 ];
@@ -101,7 +101,7 @@ const fullStackProjects = [
     <p className="professional-titles">
       Software Engineering Student &bull; Machine Learning Researcher &bull; VP Events McGill Running Club
     </p>
-    <img src="https://saif-shahin.github.io/public/profilepic.jpg" alt="Saif Shahin" className="profile-pic" />
+    <img src="https://saif-shahin.github.io/profilepic.jpg" alt="Saif Shahin" className="profile-pic" />
     <p className="professional-titles">
       Seeking an internship for summer 2024
     </p>
