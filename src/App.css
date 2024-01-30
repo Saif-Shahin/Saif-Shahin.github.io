@@ -1,38 +1,300 @@
+
+
+
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+/* Section Styling */
+section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+  color: #333;
+  border-radius: 8px;
+}
+
+/* List and Link Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  cursor: pointer;
+  color: inherit;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+/* Input and Button Styling */
+input,
+button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Miscellaneous Styling */
+p {
+  line-height: 1.6;
+}
+
+/* General section styling */
+section {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+/* Colors based on HCI principles */
+section:nth-child(odd) {
+  background-color: #f0f8ff; /* Light sky blue for a calming effect */
+  color: #333333; /* Dark color for text to ensure readability */
+}
+
+section:nth-child(even) {
+  background-color: #fefbd8; /* Light yellow for a warm, inviting feel */
+  color: #333333; /* Dark color for text to ensure readability */
+}
+
+/* Dropdown animation */
+section.expanded {
+  max-height: 1000px; /* Adjust as needed */
+}
+
+section.collapsed {
+  max-height: 0;
+  padding: 0 15px; /* Keep horizontal padding */
+}
+
+/* Text roll-out animation */
+@keyframes rollOut {
+  from {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  to {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+}
+
+section {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  cursor: pointer; /* Make the whole section clickable */
+}
+
+
+/* Ensure headers are always visible */
+section h2 {
+  margin-top: 0; /* Adjust as needed */
+}
+
+/* Collapsed state */
+section.collapsed {
+  padding-top: 25px;
+  padding-bottom: 50px; /* Maintain some padding */
+}
+
+/* Expanded state */
+section.expanded {
+  max-height: 1000px; /* Adjust as needed */
+}
+.link-space {
+  margin-right: 10px; /* Adjust the space as needed */
+}
+
+/* Overall App Styling */
 .App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
+.App-header {
+  background-color: #343f56;
+  padding: 20px;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Name styling */
+.name {
+  color: rgb(203, 204, 208);
+  font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.name .emoticon {
+  color: rgb(84, 134, 60);
 }
 
+/* Profile Picture */
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 25%;
+  margin: 20px 0;
+}
+
+/* Professional Titles */
+.professional-titles {
+  color: rgb(203, 204, 208);
+  font-weight: bold;
+}
+
+/* Section Styling */
+section:nth-child(odd) {
+  background-color: #363636; /* Dark Grey */
+}
+
+section:nth-child(even) {
+  background-color: #d3d3d3; /* Light Grey */
+}
+
+/* Icon Styling */
+.icon {
+  margin: 0 5px;
+}
+
+.content {
+  animation: rollOut 0.5s ease forwards;
+}
+
+/* Overall App Styling */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #363636; /* Dark Grey RGB=54, 54, 54 */
+  padding: 20px;
+  color: white; /* White text for dark background */
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* Profile Picture Section */
+.profile-pic-section {
+  background-color: #363636; /* Dark Grey RGB=54, 54, 54 */
+  color: white; /* White text for dark background */
 }
 
-@keyframes App-logo-spin {
+/* Name styling */
+.name {
+  color: rgb(203, 204, 208); /* Light grey color for name */
+  font-size: 36px;
+}
+
+.name .emoticon {
+  color: rgb(84, 134, 60); /* Green color for emoticon */
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+/* Professional Titles */
+.professional-titles {
+  color: rgb(203, 204, 208); /* Light grey color for titles */
+  font-weight: bold;
+}
+
+/* Section Styling */
+section:nth-child(odd) {
+  background-color: #363636; /* Dark Grey */
+  color: white; /* White text for dark background */
+}
+
+section:nth-child(even) {
+  background-color: #d3d3d3; /* Light Grey */
+  color: black; /* Black text for light background */
+}
+
+/* Icon Styling */
+.icon {
+  margin: 0 5px;
+}
+
+/* Dropdown animation */
+section.expanded {
+  max-height: 1000px; /* Adjust as needed */
+}
+
+section.collapsed {
+  max-height: 0;
+  padding: 0 15px; /* Keep horizontal padding */
+}
+
+/* Text roll-out animation */
+@keyframes rollOut {
   from {
-    transform: rotate(0deg);
+    transform: scaleY(0);
+    transform-origin: top;
   }
   to {
-    transform: rotate(360deg);
+    transform: scaleY(1);
+    transform-origin: top;
   }
+}
+
+.content {
+  animation: rollOut 0.5s ease forwards;
+}
+
+/* Ensure headers are always visible */
+section h2 {
+  margin-top: 0; /* Adjust as needed */
+}
+
+/* Collapsed state */
+section.collapsed {
+  padding-top: 25px;
+  padding-bottom: 50px; /* Maintain some padding */
+}
+
+/* Expanded state */
+section.expanded {
+  max-height: 1000px; /* Adjust as needed */
+}
+.link-space {
+  margin-right: 10px; /* Adjust the space as needed */
+}
+/* Link Styling */
+a {
+  color: inherit; /* Inherits the color of the parent element */
+  text-decoration: underline; /* Underlines the link */
+}
+
+/* Visited link styling */
+a:visited {
+  color: inherit; /* Keeps the color same as unvisited links */
 }
