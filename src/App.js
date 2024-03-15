@@ -77,7 +77,7 @@ const fullStackProjects = [
 
 
   const signalsAndNetworksPortfolio = [
-    { title: "DNS Client", description: "I implemented a DNS client using sockets in Python" ,link: "https://github.com/tomoyasan17/DnsClient" }
+    { title: "DNS Client", description: "I implemented a DNS client using sockets in Python" ,link: "https://github.com/Saif-Shahin/DNS_Client" }
   ];
 
   const technicalAndConversationalLanguages = {
@@ -97,6 +97,9 @@ const fullStackProjects = [
     </a>
     <a href="https://www.linkedin.com/in/saif-shahin-4826b1210/" target="_blank" rel="noopener noreferrer">
       <i className="fab fa-linkedin icon"></i>
+    </a>
+        <a href="https://saif-shahin.github.io/Resume.pdf" target="_blank" rel="noopener noreferrer">
+      <i className="fas fa-file-alt icon"></i> View My Resume
     </a>
     <p className="professional-titles">
       Software Engineering Student &bull; Machine Learning Researcher &bull; VP Events McGill Running Club
